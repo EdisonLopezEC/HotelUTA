@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato;
+}
+
+body {
+  position: relative;
+}
+
+#background-img-header {
+  position: relative;
+  height: 432px;
+  background: url('../images/header-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+#background-img-header span {
+  position: absolute;
+  width: 100%;
+  bottom: 99px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+
+  color:#084482 ;
+  text-align: center;
+}
+
+/* addition to header */
+body nav.navbar {
+  position: absolute;
+  top: 64px;
+  z-index: 5;
+}
+/* end of additional header css */
+
+
+/* main page component */
+section {
+  padding: 86px;
+}
+
+section .title {
+  margin-bottom: 82px;
+}
+
+section .title h2 {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #084482;
+}
+
+section hr {
+  margin: 0 auto;
+  width: 42px;
+  height: 0px;
+
+  border: 3px solid #084482;
+}
+
+.show-rooms {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 388px));
+  grid-column-gap: 52px;
+  grid-row-gap: 82px;
+  justify-content: center;
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  height: 424px;
+  font-style: normal;
+}
+
+.room-header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.room-header div {
+  position: absolute;
+  padding: 18px 18px 17px 18px;
+  background: rgba(51, 51, 51, 0.8);
+  bottom: 19px;
+  width: 100%;
+  height: 64px;
+}
+
+.room-header span {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.room .room-description {
+  color: #4F4F4F;
+  margin-top: 28px;
+  width: 100%;
+  height: 72px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.room-footer {
+  display: flex;
+  margin-top: 28px;
+  justify-content: space-between;
+  font-weight: 300;
+}
+
+
+.room-footer .room-price {
+  margin-top: auto;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  color: #084482;
+}
+
+.room-price span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4F4F4F;
+}
+
+.room-footer button {
+  background: #084482;
+  border-width: 0;
+  border-radius: 3px;
+  color: white;
+  width: 161px;
+  height: 44px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* improve text on smaller viewports */
+@media only screen and (max-width: 400px) {
+  section {
+    padding: 2rem;
+  }
+
+  .room {
+    min-width: 10rem;
+  }
+
+  .room-header span {
+    font-size: 1.3rem;
+  }
+
+  .room .room-description {
+    font-size: 1.15rem;
+  }
+
+  .room-footer .room-price {
+    font-size: 1.25rem;
+  }
+
+  .room-price span,
+  .room-footer button {
+    font-size: 0.9rem;
+  }
+
+  .room-footer button {
+    width: 9rem;
+  }
+}
+/* end of main page component styling */
+
+
+
+/* additional footer */
+footer {
+  width: unset !important;
+  height: unset !important;
+  min-height: 350px !important;
+}
+/* additional footer end */
+.head_txt{
+  text-align: center;
+  margin-top: 26%;
+  font-size: 40px;
+  font-weight: 300;
+  color: #084482;
+}

@@ -1,0 +1,126 @@
+*{
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none !important;
+}
+
+
+
+nav{
+  top:95px;
+}
+
+
+
+.logo-style{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+#text{
+	margin-left:70px;
+}
+
+.w3-button{
+  background-color: #084482;
+}
+
+.topright{
+  position:absolute;
+  top:0px;
+  right:30px;
+
+}
+
+a.w3-button{
+  color: white;
+  font-family: Lato;
+  font-style: SemiBold;
+  font-size:18px;
+  line-height:22px;
+  line-height: 100%;
+  align-self: center;
+  vertical-align: top;
+
+}
+
+main{
+  margin-top: 100px;
+}
+
+a:hover{
+  font-size: 20px;
+}
+
+table{
+  color:#4F4F4F;
+  opacity: 0.75;
+  border-style: hidden;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 50px;
+}
+
+td{
+  padding:10px 20px;
+}
+
+h3{
+  text-align: center;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  margin:90px 0;
+}
+
+h4{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  color:#084482;
+}
+
+
+
+#email{
+  margin-right: 10px;
+}
+
+.column-styling {
+	font-family: Lato;
+	font-style: Regular;
+	font-size: 18px;
+	line-height: 22px;
+	line-height: 100%;
+	color: #FFFFFF;
+}
+
+.logo-style{
+	display: grid;
+	justify-content: center;
+	padding-top: 70px;
+
+}
+
+#logo-text{
+	margin-left: 91px;
+}
+
+.textColor{
+	color: #FFFFFF;
+}
+
+.icon-style{
+	text-decoration: none;
+}

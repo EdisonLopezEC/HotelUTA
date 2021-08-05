@@ -1,0 +1,382 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none !important;
+}
+body{
+  font-family: Lato, Arial, Helvetica, sans-serif !important;
+  font-size: 1.5vw;
+}
+
+
+.section-1{
+  background: url(assets/images/header-section.jpg);
+  top: 0;
+  width: 100%;
+  z-index: -9999;
+  height: 620px;
+}
+/*This styles the sign in and reservation bar*/
+.header-links{
+  display: flex;
+  height: 64px;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.sign-in{
+  position: relative;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 65%;
+  color: #ffffff;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.reservations{
+  height: 40px;
+  font-size: 16px;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: 7%;
+  background-color: #084482;
+  padding-top: 8px;
+  border-radius: 0px 0px 4px 4px;
+}
+.reserv-btn{
+  color: #ffffff;
+  margin: 10px;
+}
+.header {
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #4F4F4F;
+  font-size: 18px;
+  text-align: center;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.logo > img{
+    width: 100px;
+    margin-left: 0px;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  margin-top: 20px;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 40px;
+}
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 100vh;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+    margin-top: 20px;
+    margin-left: 35px;
+    font-size: 18px;
+    color: #4F4F4F;
+  }
+  .header .menu {
+    clear: none;
+    float: left;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+.head_txt{
+  position:absolute;
+  text-align: center;
+   border:1px solid red;
+  font-size: 40px;
+  font-weight: 300;
+  color: #084482;
+}
+.head_txt1{
+  position:absolute;
+  padding-top:60px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+  height: 90px;
+  font-size: 40px;
+  font-weight: 300;
+  color: #084482;
+}
+
+.sec2-head{
+  padding: 30px;
+}
+.sec2-txt{
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #084482;
+  font-size: 36px;
+}
+.hr{
+  border: 2px solid #084482;
+  width: 42px;
+  display: block;
+  margin: auto;
+}
+.txt-1{
+  text-align: center;
+  font-weight: 300;
+  color: #4F4F4F;
+  font-size: 20px;
+  line-height: 29px;
+  margin-top: 10px;
+}
+.txt-2{
+  text-align: center;
+  font-weight: 300;
+  color: #4F4F4F;
+  font-size: 20px;
+  line-height: 29px;
+  margin-top: 50px;
+}
+.sec2-subhead{
+  padding: 30px;
+  margin-top: 40px;
+}
+.sec2-subtxt{
+  text-align: center;
+  color: #084482;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+
+.room-img{
+  width: 100%;
+}
+.card-title{
+  position: relative;
+  top: -15%;
+  color: #ffffff;
+  background: rgba(51, 51, 51, 0.8);
+  padding: 15px;
+  width: 100%;
+}
+.card-text{
+  margin-top: 0px;
+  text-align: auto;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+}
+.card-foot{
+  margin-top: 10px;
+}
+.btn{
+  float: right;
+  margin-top: -5px;
+}
+.btn.btn-view{
+  background-color: #084482;
+  color: #ffffff;
+}
+.btn.btn-view:hover,.btn.btn-view:focus{
+  color: #ffffff;
+}
+.price{
+  font-size: 24px;
+  color: #084482;
+}
+.cf-text{
+  font-size: 12px;
+  color: #4F4F4F;
+}
+
+.middle-image{
+  margin-top: 5%;
+}
+.middle-image > img{
+   width: 100%;
+}
+
+@media screen and (max-width: 1000px){
+  .sign-in{
+    margin-left: 0%;
+  }
+  .head_txt{
+    margin-top: 60%;
+  }
+  .txt-1{
+    font-size: 18px;
+    margin: 5px;
+  }
+  .col-sm{
+    margin-bottom: 50px;
+  }
+}
+footer{
+  color: white;
+  background: #001326;
+  padding-top: 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+footer input#email{
+  margin: 0 1rem;
+  padding: 5px;
+  border-radius: 3px;
+  background-color:#295887;
+  border: 2px solid white;
+}
+input#email::placeholder{
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+  font-weight: bold;
+}
+footer input.btn-lg{
+  color: white;
+  background: #012346;
+  font-weight: bold;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+footer .social-media-icons {
+  justify-content: center;
+}
+.text-color{
+  color:white;
+}
+.row-1{
+  background-color:#295887;
+  justify-content: space-between;
+  padding: 0.75rem 5rem 0.75rem 5rem;
+  align-items: center;
+}
+.row-2 {
+  background: #001326;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.form-group{
+  padding:10px 20px;
+}
+#email{
+  padding-right: 10px;
+}
+.footer-copyright {
+  background: #001326;
+}
+
+@media (max-width: 880px) {
+  .row-1 {
+    justify-content: center;
+  }
+  .row-1 form {
+    flex-direction: column;
+  }
+  .row-1 form #email {
+    margin: 0.5rem 0;
+  }
+  .social-media-icons {
+    margin: 0.5rem 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
