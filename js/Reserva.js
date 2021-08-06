@@ -9,7 +9,15 @@ class Reserva{
     }
 
 
+    parseJSON = (data) => {
+
+    }
+
     
+
+
+
+
 
 
 }
