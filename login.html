@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+
+<body>
+
+    <div class="cajaIzquierda">
+        <div class="titulo">
+            <h2>PAGINA DE ACCESO</h2>
+            <p>Inicie sesión desde aquí para acceder.</p>
+        </div>
+    </div>
+    <div class="contenido">
+        <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+                <form>
+                    <div class="form-group">
+                        <label>Nombre de usuario</label>
+                        <input type="text" id="nombre" class="form-control" placeholder="Nombre de usuario">
+                    </div>
+                    <div class="form-group">
+                        <label>Contraseña</label>
+                        <input type="password" id="contrasena" class="form-control" placeholder="Contraseña">
+                    </div>
+                    <p class="error" id="error"></p>
+
+                </form>
+                <button id="validar" type="submit" class="btn-black" onclick="iniciarSesion()"> 
+                    Login
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+
+</html>

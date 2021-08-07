@@ -1,8 +1,7 @@
-class Cliente{
+class Huesped{
 
-    constructor(nombre,apellido,cedula, correo, telefono){
-        this.nombre =nombre;
-        this.apellido =apellido;
+    constructor(nombApell,cedula, correo, telefono){
+        this.nombApell = nombApell;
         this.cedula = cedula;
         this.correo = correo;
         this.telefono = telefono;

@@ -1,0 +1,80 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.cajaIzquierda {
+  height: 100%;
+  background-image: url(https://i.pinimg.com/736x/c5/e5/9b/c5e59b18dadc0ba08cc4d13654a8bf31.jpg);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.contenido {
+  padding: 0px 10px;
+  margin-left: 40%;
+}
+
+.cajaIzquierda {
+  width: 40%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.login-form {
+  margin-top: 80%;
+}
+
+.register-form {
+  margin-top: 20%;
+}
+
+.login-main-text {
+  margin-top: 20%;
+  padding: 60px;
+  color: #fff;
+}
+
+.login-main-text h2 {
+  font-weight: 300;
+}
+
+.btn-black {
+  background-color: #000 !important;
+  color: #fff;
+  border-radius: .5rem;
+  height: 2.5rem;
+  width: 5rem;
+  border: none;
+
+}
+
+.btn-black:focus{
+ outline: none;
+ border: none;   
+}
+
+.btn-black:hover{
+
+    border: 3px solid #e8499d;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.titulo {
+    margin-top: 15rem;
+    margin-left: 2rem;
+    color: #000;
+    font-weight:bold;
+
+}
+
+.error{
+
+    color: red;
+
+}
+
+

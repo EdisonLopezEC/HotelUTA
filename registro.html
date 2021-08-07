@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/reserva.css">
+</head>
+<body>
+
+<div class="row centrarReserva">
+    <div class="col-md-6 col-md-offset-3">
+        <form id="msform">
+            <!-- progressbar -->
+
+            <!-- fieldsets -->
+            <fieldset>
+                <h2 class="fs-title">DATOS DE LA RESERVA</h2>
+                <h3 class="fs-subtitle">Complete la informacion</h3>
+                <input type="text" id="nombApellLogin" name="fname" placeholder="Nombre y Apellido"/>
+                <input type="text" id="correoLogin" name="phone" placeholder="Correo"/>
+                <input type="text" id="cedulaLogin" name="phone" placeholder="Cedula"/>
+                <input type="text" id="telefonoLogin" name="phone" placeholder="Telefono"/>
+                <input type="number" id="nPersonas" min=1 max=20 name="phone" placeholder="Numero de personas"/>
+                <!-- nombre, fechaIngreso, fechaSalida, nPersonas, habitacion -->
+                <div class="wrapper">
+                    <a class="button" onclick="agregarReserva()" href="./seleccionHotel.html">Siguiente</a>
+                </div>
+                
+                <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+            </fieldset>
+
+    </div>
+</div>
+<script src="/js/registro.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./js/reservaIndex.js"></script>
+</body>
+</html>
