@@ -59,9 +59,11 @@ let mosntrarCLiente = (d) => {
       "
     >
       <a
-        href="/editarCliente.html"
+       
         class="text-indigo-600 hover:text-indigo-900"
-        onclick = "comprobarCedula(${d._cliente.cedula})"
+        href="/editarCliente.html"
+        onclick = "comprobarCedula(${d._cliente.cedula.toString()})"
+  
         >Ver</a
       >
     </td>
@@ -89,7 +91,9 @@ imprimirClientes(clientes);
 let reservas=  obtenerReservas();
 
 comprobarCedula = (cedula) => {
-  let cliente =  reservas.find(d => d._cliente.cedula == cedula.toString());
+  let cliente =  reservas.find(d => parseInt( d._cliente.cedula) == cedula.toString());
+
+  console.log(reservas);
   localStorage.setItem("clienteSelec",JSON.stringify(cliente));
 }
 
