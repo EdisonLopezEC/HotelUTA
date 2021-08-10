@@ -28,10 +28,9 @@
                 <div class="ml-10 flex items-baseline space-x-4">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                   <a
-                    href="#"
+                    href="./listado-reservas.html"
                     class="
-                      bg-gray-900
-                      text-white
+                      text-gray-300
                       px-3
                       py-2
                       rounded-md
@@ -45,7 +44,6 @@
                     href="./listado-clientes.html"
                     class="
                       text-gray-300
-                      hover:bg-gray-700 hover:text-white
                       px-3
                       py-2
                       rounded-md
@@ -54,10 +52,12 @@
                     "
                     >Clientes</a
                   >
+
                   <a
-                  href="./listado-empleados.html"
+                  href="#"
                   class="
-                    text-gray-300
+                    bg-gray-900
+                    text-white
                     hover:bg-gray-700 hover:text-white
                     px-3
                     py-2
@@ -135,6 +135,18 @@
                       />
                     </button>
                   </div>
+
+                  <!--
+                  Dropdown menu, show/hide based on menu state.
+  
+                  Entering: "transition ease-out duration-100"
+                    From: "transform opacity-0 scale-95"
+                    To: "transform opacity-100 scale-100"
+                  Leaving: "transition ease-in duration-75"
+                    From: "transform opacity-100 scale-100"
+                    To: "transform opacity-0 scale-95"
+                --></div>
+              </div>
             </div>
             <div class="-mr-2 flex md:hidden">
               <!-- Mobile menu button -->
@@ -387,7 +399,7 @@
 
       <header class="bg-white shadow">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold text-gray-900">Reservas</h1>
+          <h1 class="text-3xl font-bold text-gray-900">Clientes</h1>
         </div>
       </header>
       <main>
@@ -443,7 +455,7 @@
                             tracking-wider
                           "
                         >
-                          Habitacion
+                          Cedula
                         </th>
                         <th
                           scope="col"
@@ -457,7 +469,7 @@
                             tracking-wider
                           "
                         >
-                          Estado
+                          Correo
                         </th>
                         <th
                           scope="col"
@@ -471,29 +483,16 @@
                             tracking-wider
                           "
                         >
-                          Entrada/Salida
+                          Telefono
                         </th>
-                        <th
-                          scope="col"
-                          class="
-                            px-6
-                            py-3
-                            text-left text-xs
-                            font-medium
-                            text-gray-500
-                            uppercase
-                            tracking-wider
-                          "
-                        >
-                          Personas
-                        </th>
+
                         <th scope="col" class="relative px-6 py-3">
                           <span class="sr-only">Ver</span>
                         </th>
                       </tr>
                     </thead>
-                    <tbody id="reservasAdmin" class="bg-white divide-y divide-gray-200">
-
+                    <tbody id="clientesAdmin" class="bg-white divide-y divide-gray-200">
+                     
                       <!-- More people... -->
                     </tbody>
                   </table>
@@ -506,5 +505,6 @@
       </main>
     </div>
   </body>
-  <script src="/js/listado-reservas.js"></script>
+  <script src="/js/listado-clientes.js"></script>
+  <script src="/js/editarCliente.js"></script>
 </html>

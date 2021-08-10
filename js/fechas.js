@@ -1,15 +1,17 @@
 
-let fechaInicial;
-let fechaFinal;
+let auxFechaInicial;
 
 
-agregarFecha = () => {
+agregarFechaInicial = () => {
     auxFechaInicial = document.getElementById("fechaInicial").value;
-    auxFechaFinal = document.getElementById("fechaFinal").value;
-    guardarLocalStorage();
+    guardarLocalStorageInicial();
 }
 
-function guardarLocalStorage(){
+function guardarLocalStorageInicial(){
     localStorage.setItem("fIni",auxFechaInicial);
-    localStorage.setItem("fFin",auxFechaFinal);
 }
+
+
+
+document.getElementById("fechaInicial").min = new Date().toISOString().split("T")[0];
+
