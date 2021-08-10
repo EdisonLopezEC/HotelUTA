@@ -1,7 +1,6 @@
 
 
-
-let mosntrarCLiente = (d) => {
+let mosntrarPersonal = (d) => {
     return `<tr>
     <td class="px-6 py-4 whitespace-nowrap">
       <div class="flex items-center">
@@ -14,13 +13,13 @@ let mosntrarCLiente = (d) => {
         </div>
         <div class="ml-4">
           <div class="text-sm font-medium text-gray-900">
-            ${d._cliente.nombApell}
+            ${d._nombre}
           </div>
         </div>
       </div>
     </td>
     <td class="px-6 py-4 whitespace-nowrap">
-      <div class="text-sm text-gray-900">${d._cliente.cedula}</div>
+      <div class="text-sm text-gray-900">${d._cedula}</div>
     </td>
     <td class="px-6 py-4 whitespace-nowrap">
       <span
@@ -35,7 +34,7 @@ let mosntrarCLiente = (d) => {
           text-green-800
         "
       >
-        ${d._cliente.correo}
+        ${d._cargo}
       </span>
     </td>
     <td
@@ -46,7 +45,7 @@ let mosntrarCLiente = (d) => {
         text-sm text-gray-500
       "
     >
-      ${d._cliente.telefono}
+      ${d._salario}
     </td>
 
     <td
@@ -62,7 +61,6 @@ let mosntrarCLiente = (d) => {
        
         class="text-indigo-600 hover:text-indigo-900"
         href="/editarCliente.html"
-        onclick = "comprobarCedula(${d._cliente.cedula.toString()})"
   
         >Ver</a
       >
@@ -70,40 +68,21 @@ let mosntrarCLiente = (d) => {
   </tr>`
 }
 
-let clientes = obtenerReservas();
+function obtenerPersonal(){
+    return JSON.parse(localStorage.getItem("personal"));
+}
 
-function imprimirClientes(clientes){
+
+let personal = obtenerPersonal();
+
+function imprimirPersonal(clientes){
     let htmlClientes = "";
     clientes.forEach( d => {
-        htmlClientes += mosntrarCLiente(d);
+        htmlClientes += mosntrarPersonal(d);
     })
-    document.getElementById("clientesAdmin").innerHTML = htmlClientes;
-}
-
-function obtenerReservas(){
-    return JSON.parse(localStorage.getItem("reservas"));
+    document.getElementById("personalAdmin").innerHTML = htmlClientes;
 }
 
 
-imprimirClientes(clientes);
-
-
-let reservas=  obtenerReservas();
-
-comprobarCedula = (cedula) => {
-  let cliente =  reservas.find(d => parseInt( d._cliente.cedula) == cedula.toString());
-  console.log(reservas);
-  localStorage.setItem("clienteSelec",JSON.stringify(cliente));
-}
-
-
-
-
-
-
-
-
-
-
-
+imprimirPersonal(personal);
 

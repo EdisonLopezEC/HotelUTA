@@ -7,6 +7,8 @@
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <!-- ... -->
   </head>
@@ -399,10 +401,11 @@
 
       <header class="bg-white shadow">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold text-gray-900">Clientes</h1>
+          <h1 class="text-3xl font-bold text-gray-900">Personal</h1>
         </div>
       </header>
       <main>
+        <a href="./crearPersonal.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Agregar Personal</a>
         <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           <!-- Replace with your content -->
           <!-- This example requires Tailwind CSS v2.0+ -->
@@ -441,7 +444,7 @@
                             tracking-wider
                           "
                         >
-                          Cliente
+                          Nombre
                         </th>
                         <th
                           scope="col"
@@ -469,7 +472,7 @@
                             tracking-wider
                           "
                         >
-                          Correo
+                          Cargo
                         </th>
                         <th
                           scope="col"
@@ -483,15 +486,15 @@
                             tracking-wider
                           "
                         >
-                          Telefono
+                          Salario
                         </th>
-
                         <th scope="col" class="relative px-6 py-3">
                           <span class="sr-only">Ver</span>
                         </th>
                       </tr>
                     </thead>
-                    <tbody id="clientesAdmin" class="bg-white divide-y divide-gray-200">
+                    
+                    <tbody id="personalAdmin" class="bg-white divide-y divide-gray-200">
                      
                       <!-- More people... -->
                     </tbody>
@@ -505,6 +508,10 @@
       </main>
     </div>
   </body>
-  <script src="/js/listado-clientes.js"></script>
-  <script src="/js/editarCliente.js"></script>
+  <script src="/js/RegistroHotel.js"></script>
+  <script src="/js/formularioPersonal.js"></script>
+  <script src="/js/listado-personal.js"></script>
+  <script src="/js/Personal.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </html>
